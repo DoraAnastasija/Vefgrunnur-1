@@ -1,0 +1,42 @@
+body{
+    max-width:50%;/* 800px eða 1600px */
+    font-size:1em; /* 1em=16px/ retinaskjár =32px*/
+    margin-left:auto;
+    margin-right: auto;
+    padding:1em;
+    border: 1px solid rgb(178, 178, 233);
+    line-height: 1.5;
+}
+h1 {
+    color: rgb(240, 166, 166)
+}
+h2 {
+    color: rgb(130, 199, 130)
+}
+h3{
+    color: rgb(136, 136, 236)
+}
+/*viðmið - breakpoints-mobile up*/
+@media screen and (min-width:48em){
+    .col-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+    .col-3{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2em;
+    }
+    .col-4{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+}
+@media screen and (min-width:60em){
+    .col-4{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+}
